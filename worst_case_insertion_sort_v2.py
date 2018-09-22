@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[34]:
+# In[41]:
 
 
 # Imports:
@@ -43,10 +43,21 @@ def worst_case_time(set_cards):
 
 
 worst_time_in_sec = []
-number_of_cards = [10, 100, 1000, 10000]
+number_of_cards = [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 7500, 10000]
 
-for number_cards in range(4):
+for number_cards in range(11):
     cards = create_cards(number_of_cards[number_cards])
     time_in_sec = worst_case_time(cards)
     worst_time_in_sec.append(time_in_sec)
+    
+
+
+# Plotting:
+
+
+plt.plot(number_of_cards, worst_time_in_sec)
+plt.xlabel("Number cards")
+plt.ylabel("Worst runtime in seconds")
+plt.title("Insertion sort algorithm")
+plt.show()
 

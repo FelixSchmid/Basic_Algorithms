@@ -1,11 +1,4 @@
-
-# coding: utf-8
-
-# In[41]:
-
-
 # Imports:
-
 
 import random
 import time
@@ -13,7 +6,6 @@ import matplotlib.pyplot as plt
 
 
 # Functions:
-
 
 def create_cards(num_cards):
     cards = list(range(num_cards, 0, -1))
@@ -38,22 +30,18 @@ def worst_case_time(set_cards):
     return measure_time
 
 
-
 # Execution:
 
-
 worst_time_in_sec = []
-number_of_cards = [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 7500, 10000]
+number_of_cards = [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 
-for number_cards in range(11):
+for number_cards in range(14):
     cards = create_cards(number_of_cards[number_cards])
     time_in_sec = worst_case_time(cards)
     worst_time_in_sec.append(time_in_sec)
     
 
-
 # Plotting:
-
 
 plt.plot(number_of_cards, worst_time_in_sec)
 plt.xlabel("Number cards")

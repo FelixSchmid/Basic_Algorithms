@@ -54,7 +54,7 @@ def worst_case_time(set_cards):
 # Testing runtime:
 
 worst_time_in_sec = []
-number_of_cards = [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
+# number_of_cards = [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 
 for number_cards in range(10, 10000, 100):
     cards = create_cards(number_cards)

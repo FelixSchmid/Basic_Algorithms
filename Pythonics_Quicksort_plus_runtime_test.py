@@ -15,7 +15,7 @@ def start_sort(myList):
         end: The ending index of the list.
     """
     start = 0
-    end = len(myList)-1
+    end = len(myList) - 1
     return quicksort(myList, start, end)
 
 def quicksort(myList, start, end):
@@ -31,8 +31,8 @@ def quicksort(myList, start, end):
     """
     if start < end:
         pivot = partition(myList, start, end)
-        quicksort(myList, start, pivot - 1)
-        quicksort(myList, pivot + 1, end)
+        quicksort(myList, start, pivot-1)
+        quicksort(myList, pivot+1, end)
     return myList
 
 def partition(myList, start, end):
@@ -86,11 +86,11 @@ def create_cards(n, method):
         print('Please use a valid method!')
         return
     if method == 'inc':
-        cards = list(range(1, n + 1))
+        cards = list(range(1, n+1))
     if method == 'dec':
-        cards = list(range(n + 1, 1, -1))
+        cards = list(range(n+1, 1, -1))
     if method == 'shuffle':
-        cards = list(range(1, n + 1))
+        cards = list(range(1, n+1))
         random.shuffle(cards) 
     return(cards)
 

@@ -38,7 +38,7 @@ def quicksort(myList, start, end):
 def partition(myList, start, end):
     """Moves the right and left pointer and changes the numbers
        within the list according to the Quicksort principle until 
-       the pointer crosses. The index to select the new pivot 
+       the pointers cross. The index for selecting the new pivot 
        is returned.
     
     Args:
@@ -71,7 +71,7 @@ def create_cards(n, method):
     
     Args:
         n: The number of integers that should be in the list.
-        method: the method the integers are ordered in the
+        method: The method the integers should be ordered in the
         list (shuffle, increasing, decreasing).
     Returns:
         A list of n integers.
@@ -100,7 +100,7 @@ def avg_time(n_iteration, n_cards, method):
     Args:
         n_iterations: The number of iterations.
         n_cards: The number of cards.
-        method: the method the integers are ordered in the
+        method: the method the integers should be ordered in the
         list (shuffle, increasing, decreasing).
     Returns:
         average_time: The average runtime in seconds.
